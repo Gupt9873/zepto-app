@@ -1,0 +1,284 @@
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+  background-color: rgb(0 0 0/var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.7;
+  transition-property: opacity;
+  transition-duration: .15s;
+    transition-timing-function: cubic-bezier(.4,0,1,1);
+  }
+  .modal-container{
+    align-items: center;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+  }
+ 
+  .modal-content {
+ 
+    background-color: #fefefe;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+   border-radius: 0.75rem;
+    width: 44rem;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+    --tw-bg-opacity: 0.7;
+  }
+ 
+    .modal :fullscreen{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .login_login_container{
+   
+    background: url(https://cdn.zeptonow.com/web-static-assets-prod/artifacts/10.4.0/_next/static/media/bg-login.32d6e9e5.svg)top 15% left/cover no-repeat;
+    width:60%;
+    float: left;
+  }
+  .login-container{
+    height: 100%;
+    width: 100%;
+    padding: 3rem 2rem 2rem;
+    overflow: auto;
+  }
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+ 
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+ 
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  label {
+    margin-bottom: 10px;
+  }
+ 
+  input {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+ 
+  button{
+    padding: 10px;
+    /* background-color: #4CAF50; */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+ 
+  button :hover {
+    background-color: #45a049;
+  }
+  div{
+    display: block;
+  }
+  .zepto-logo{
+    color: transparent;
+    object-fit: contain;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width:164px;
+    height: 54px;
+   
+  }
+  .login-heading{
+    max-width: 95%;
+  }
+  .typography{
+    font-size: 2.125rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    letter-spacing: .05em;
+  }
+  .input-container{
+    position: relative;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 1.5rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--tw-bg-opacity));
+    font-size: .875rem;
+    line-height: 1.125rem;
+    --tw-text-opacity: 1;
+    color: rgba(var(--color-inverted),var(--tw-text-opacity));
+    float:left;
+    width:83%;
+    text-align: center !important;
+  }
+  .input-rounded{
+    border-radius: 9999px;
+  }
+  .input_prefixicon{
+    padding-left: 0.875rem;
+  }
+  body{
+    -webkit-tap-highlight-color: transparent;
+  }
+  .input_md{
+    font-size: .9375rem;
+    line-height: 1.25rem;
+    border: none;
+  }
+  .input-text{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display: block;
+    flex-grow: 1;
+    appearance: none;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-weight: 400;
+    border: none !important;
+    margin-bottom:0%;
+  }
+  .bg-transparent {
+    background-color: transparent;
+  }
+  .login-button:disabled{
+    --tw-text-opacity: 1;
+    color: rgba(var(--color-base),var(--tw-text-opacity));
+    opacity: .5;
+   
+}
+.login-button{
+  background: linear-gradient(92.16deg,#ff3269 1.82%,#ff794d 98.18%);
+  margin-top: 0.25rem;
+    border-radius: 1.5rem ;
+    padding: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    width: 83% !important;
+}
+.btn-contained{
+  --tw-bg-opacity: 1;
+    letter-spacing: .1em;
+}
+.border-skin{
+  --tw-border-opacity: 1;
+    border-color: rgba(var(--color-primary),var(--tw-border-opacity));
+}
+.border{
+  border-width: 1px;
+  width:100%;
+}
+ 
+:disabled{
+  cursor: default;
+}
+button{
+  text-transform: none;
+  text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+  margin: 0;
+}
+.btn{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.login-footer{
+  margin-top: 32px;
+  padding-top: 0;
+  display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center;
+    width: 80%;
+}
+h2{
+  color: white;
+  font-family: system-ui;
+}
+ 
+.footer{
+  font-size: .875rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+    --tw-text-opacity: 1;
+    color:white;
+    display: block;
+}
+ 
+p{
+  margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+   
+}
+.login_link{
+  padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    font-weight: 700;
+    --tw-text-opacity: 1;
+    color: rgb(216, 73, 73) !important;
+}
+a{
+  cursor: pointer;
+}
+.get-app-modal-container{
+  background: url(https://cdn.zeptonow.com/web-static-assets-prod/artifacts/10.4.0/_next/static/media/bg-desktop.7efcec3a.png) 0 0/cover no-repeat;
+  display: block;
+  width:40% !important;
+  float: right;
+  --tw-bg-opacity: 1!important;
+    background-color: rgb(255 255 255/var(--tw-bg-opacity))!important;
+}
+.get-app-modal-container-container{
+  padding-top: 1rem;overflow: auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.get-app-phone{
+  color: transparent;
+    object-fit: contain;
+    overflow: hidden;
+    margin-top: 1.25rem;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    display:block;
+ 
+}
+.get-app-image{
+ 
+}
+ 
+ 
